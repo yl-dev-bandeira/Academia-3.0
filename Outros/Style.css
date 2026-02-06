@@ -1,0 +1,148 @@
+/* Geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+header {
+    background-color: #000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffcc00;
+    font-weight: bold;
+}
+.logo{
+    max-width: 100%;
+    height: auto;
+    width: 300px;
+    margin: 0 auto;
+}
+/* Carrossel */
+.carousel-container {
+    width: 100%;
+    height: auto; /* Tamanho fixo para o carrossel */
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+    align-items: center; /* Centraliza as imagens verticalmente */
+    background-color: #333; /* Fundo opcional */
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Garante que a imagem cubra toda a área disponível */
+    max-width: 100%; /* Impede que a imagem ultrapasse a largura do container */
+    max-height: 100%; /* Impede que a imagem ultrapasse a altura do container */
+}
+
+.sobre-nos{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+/* Galeria de Fotos */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.foto img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Planos */
+.planos {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    text-align: center;
+}
+
+.plano {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.plano h2 {
+    color: #ffcc00;
+}
+
+button {
+    background-color: #ffcc00;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Formulário de Cadastro */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, select {
+    margin: 10px 0;
+    padding: 10px;
+    width: 200px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .planos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plano {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .foto img {
+        width: 100%;
+        height: auto;
+    }
+
+    .logo{
+        width: 200px;
+    }
+}
+
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
